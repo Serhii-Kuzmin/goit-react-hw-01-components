@@ -1,14 +1,29 @@
-/* .transactionHistory {
-    max-width: 722px;
-    width: 100%;
-    border: 1px solid #8afabd;
+.transactionHistory {
+  font-size: 18px;
+  border-collapse: separate;
+  box-shadow: 0 4px 2px -2px gray;
+  margin-bottom: 20px;
 }
 
-.row {
-    background-color: rgb(135, 247, 213);
+th,
+td {
+  padding: 16px 24px;
+  text-align: left;
 }
 
-.cell {
-    border: 3px solid #8afabd;
-    padding: 5px;
-} */
+thead tr {
+  background-color: #3bc9db;
+  color: #fff;
+}
+
+thead th {
+  width: 24%;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f8f9fa;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #e9ecef;
+}

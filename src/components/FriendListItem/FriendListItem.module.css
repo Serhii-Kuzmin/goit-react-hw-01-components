@@ -1,25 +1,24 @@
-/* .item {
-    display: flex;
-    gap: 10px;
-    flex-wrap: nowrap;
-    align-items: center;
-    background-color: aquamarine;
-    padding: 10px;
-    border-radius: 5px;
+.item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 0 20px 0 rgba(26, 3, 3, 0.1);
+  padding: 10px;
 }
 
 .status {
-    display: block;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: gray;
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: gray;
 }
 
 .green {
-    background-color: green;
+  background-color: green;
 }
 
 .red {
-    background-color: red;
-} */
+  background-color: red;
+}

@@ -1,12 +1,12 @@
 import css from './FriendListItem.module.css';
 import PropTypes from 'prop-types';
 
-export const FriendListItem = ({ avatar, name, isOnLine }) => {
+export const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
     <li className={css.item}>
       <span
         className={
-          isOnLine ? `${css.status} ${css.green}` : `${css.status} ${css.red}`
+          isOnline ? `${css.status} ${css.green}` : `${css.status} ${css.red}`
         }
       ></span>
       <img className="avatar" src={avatar} alt={name} width="48" />
@@ -15,7 +15,7 @@ export const FriendListItem = ({ avatar, name, isOnLine }) => {
   );
 };
 
-FriendListItem.prototypes = {
+FriendListItem.propTypes = {
   avatar: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   isOnline: PropTypes.bool.isRequired,

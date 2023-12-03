@@ -1,16 +1,16 @@
 import PropTypes from 'prop-types';
 import css from './StatsList.module.css';
-import { makeGreen } from './makeGreen';
+import { getRandomColor } from './getRandomColor';
 
 export const StatsList = ({ stats }) => {
   return (
-    <ul className={css.statList}>
+    <ul className={css.statsList}>
       {stats.map(({ id, label, percentage }) => {
         return (
           <li
             className={css.item}
             key={id}
-            style={{ backgroundColor: `${makeGreen()}` }}
+            style={{ backgroundColor: `${getRandomColor()}` }}
           >
             <span className="label">{label}</span>
             <span className="percentage">{percentage}%</span>

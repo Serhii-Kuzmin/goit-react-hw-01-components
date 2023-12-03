@@ -4,13 +4,13 @@ import { Transactions } from 'components/Transactions/Transactions';
 
 export const TransactionHistory = ({ items }) => {
   return (
-    <table className={css.transitonHistory}>
+    <table className={css.transactionHistory}>
       <thead>
-        <th className={css.row}>
+        <tr className={css.row}>
           <th className={css.cell}>Type</th>
           <th className={css.cell}>Amount</th>
           <th className={css.cell}>Currency</th>
-        </th>
+        </tr>
       </thead>
       <Transactions items={items} />
     </table>

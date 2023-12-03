@@ -1,7 +1,11 @@
-/* .statistics {
-    width: 200px;
-    padding: 10px;
-    background-color: rgb(98, 236, 167);
-    text-align: center;
+.statistics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
 }
- */
+
+.title {
+  font-size: 32px;
+}
